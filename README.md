@@ -20,7 +20,6 @@ This is a personal portfolio website designed to showcase my skills, education, 
 - **HTML5** for structuring the content.
 - **CSS3** for styling and layout.
 - **Bootstrap 5** for responsive design and components.
-- **JavaScript** for interactive elements.
 
 ## Installation
 
