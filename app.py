@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
-# Configure Flask-Mail (Replace with your own email credentials)
+# Configure Flask-Mail , this where i will receive message being sent by users
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
