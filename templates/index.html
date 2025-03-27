@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personal Portfolio</title>
+    <title>Curved Background Image</title>
+    
+</head>
+<body>
+    <title>Live Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter {
+            font-size: 48px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Live Counter</h1>
+    <div id="counter">0</div>
+
+    <script>
+        let count = 0; // Initial count
+
+        function updateCounter() {
+            count++; // Increment count
+            document.getElementById("counter").innerText = count;
+        }
+
+        setInterval(updateCounter, 1000); // Update every second
+    </script>
+    
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+<script src="/static/script.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+ 
+    <!-- this allow visitor counter notice -->
+    <title>Live Visitor Counter</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    
+    <style>
+        .counter-box {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background: #007bff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+   
+    <script>
+
+        // live visitor counter 
+        
+        // Create a scene
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(30, window.innerWidth / (window.innerHeight * 1.5), 0.5, 500);
+
+
+        const renderer = new THREE.WebGLRenderer();
+        
+        renderer.setSize(window.innerWidth, window.innerHeight * 0.5);
+
+        document.body.appendChild(renderer.domElement);
+    
+        // Create a cube for 3D display
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
+        const cube = new THREE.Mesh(geometry, material);
+        
+        scene.add(cube);
+        camera.position.z = 5;
+    
+        // Animate the cube 3D this appear first at the frontend to display 3d section
+        function animate() {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+    
+<!-- this show case image background for the frontend it can be reduce less than 250px -->
+
+    <div style="
+        height: 250px;
+        border: 3px solid red;
+        background: url('static/kago.jpg') no-repeat center;
+        background-size: cover;
+        border-bottom-left-radius: 50% 20%;
+        border-bottom-right-radius: 50% 20%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    ">
+        Welcome to Adebayo Toheeb Portfolio
+    </div>
+
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Where Creativity Meets Innovation!</p>
+        <p>Explore my skills, experience, and achievements as I bring ideas to life through cutting-edge web design</p>
+        <p>and digital excellence. Let's build something extraordinary together! </p>
+    </header>
+
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p>Adebayo Toheeb – Software Developer & IT Professional
+            Adebayo Toheeb is a highly skilled software developer ,digital marketing manager, website designer, and IT specialist with a strong background in computer engineering. His expertise spans across web development, graphic design, SEO optimization, and project management.
+            
+            Professional Experience
+            Website Design & Development: Specializes in building responsive and engaging websites, particularly for painting companies and businesses.
+            
+            Digital Marketing: Experienced in implementing SEO strategies, content marketing, and brand awareness campaigns to drive online growth.
+            
+            IT & Project Management: Skilled in leading tech projects, from software development to business IT solutions.
+            
+            Internship at CodeAlpha: Developed projects in Python programming, including a guessing game, stock portfolio tracker, and web applications.
+            
+            E-Commerce & Renewable Energy: Runs an online store for inverters, solar systems, and batteries with installation services.
+            
+            Education & Certifications
+            Bachelor’s Degree in Computer Engineering – Olabisi Onabanjo University
+            
+            Fully Funded Scholarship in Software Development – PLP Pan African
+            
+            Expertise in GoHighLevel – Specializing in SEO optimization for businesses
+            
+            Career Goals
+            Adebayo is passionate about IT management in the hospitality industry and is actively pursuing opportunities in web technologies, digital marketing, and project leadership. He is also working on innovative machine learning applications for medical technology.
+            
+            Contact & Online Presence
+            Portfolio Website: https://toheebay.online
+            
+            LinkedIn: linkedin.com/in/toheebay12
+            
+            Medium Blog: toheebay.online
+            
+            WhatsApp: +2347067412852
+            
+            Email: adebayoajani23@gmail.com</p>
+    </section>
+
+    <section id="skills" class="container my-5" style="background-color: #1B4332; color: white; padding: 20px; border-radius: 10px;">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Python</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+    
+    </section>
+
+    <section id="education" class="container my-5">
+        <h2>Education</h2>
+        <p>Bachelor’s Degree in Computer Engineering – Olabisi Onabanjo University</p>
+        <a href="CV.pdf" download class="btn btn-primary">Download CV</a>
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://gpaintconsulting.com.ng" target="_blank">Painting Company Website</a> - A responsive website for a painting company with SEO and booking features.</li>
+            <li><a href="https://www.greenvolts.com.ng">Project 2</a>  Solar Energy eCommerce Platform
+                Description:
+                A modern eCommerce platform designed for the solar energy industry, catering to both homeowners and industrial clients. The platform enables users to browse and purchase solar panels, inverters, batteries, and complete solar energy solutions. It includes features like:
+                
+                Product catalog with detailed specifications
+                
+                Custom solar system builder for tailored energy solutions
+                
+                Secure online payment and order tracking
+                
+                Blog & resources section for solar energy education
+                
+                Customer reviews and live chat support
+                
+                This project is aimed at promoting sustainable energy adoption and simplifying access to renewable energy solutions.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Connect with me:</p>
+        <p>Adebayo Toheeb @PLP 2025</p>
+        <a href="https://www.facebook.com/kolawole.adebayo.1069" class="text-white mx-2">Facebook</a>
+        <a href="https://www.linkedin.com/in/toheebay12" class="text-white mx-2">LinkedIn</a>
+        <a href="https://www.github.com/Toheebay" class="text-white mx-2">Github</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
