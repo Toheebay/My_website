@@ -51,6 +51,6 @@ You can check out the live version of my portfolio at: [Your Live Link Here]
 
 For any inquiries, feel free to reach out via the contact form on the website or through:
 
-- **Email:** your-email@example.com
+- **Email:** adebayoajani23@gmail.com
 - **LinkedIn:** [linkedin.com/in/toheebay12](https://www.linkedin.com/in/toheebay12)
 - **Facebook:** [facebook.com/kolawole.adebayo.1069](https://www.facebook.com/kolawole.adebayo.1069)
